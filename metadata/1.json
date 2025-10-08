@@ -1,0 +1,15 @@
+{
+  "name": "Pepe",
+  "description": "A fun and festive holiday offbeat greet",
+  "image": "ipfs://QmXr7Ci1DWeeYzrBRvpBip46FPuePdkJwJeb44ijz6V25B",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "Holiday"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "1 of many"
+    }
+  ]
+}

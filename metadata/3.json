@@ -1,0 +1,15 @@
+{
+  "name": "Happy Hodl-days",
+  "description": "A fun and witty holiday card for those who keep calm and HODL on",
+  "image": "ipfs://bafybeiaa7kcfh63h2uczsdddabrwtzf67znu5uoebmhdvhlv437lunqk6u",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "Holiday"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "1 of many"
+    }
+  ]
+}

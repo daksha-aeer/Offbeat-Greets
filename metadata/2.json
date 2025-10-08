@@ -1,0 +1,15 @@
+{
+  "name": "Cheers To The Season",
+  "description": "A warm and joyful holiday offbeat greet for celebrating togetherness",
+  "image": "ipfs://bafybeig2wvvckrlcrc4hcaar2yob3p3e7e6or57o56nzcchsd4pj7m7z3a",
+  "attributes": [
+    {
+      "trait_type": "Category",
+      "value": "Holiday"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "1 of many"
+    }
+  ]
+}
