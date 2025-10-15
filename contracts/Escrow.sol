@@ -30,7 +30,25 @@ contract Escrow {
         _;
     }
 
-    function deposit(address _sender, string _uniqueId, uint256 _tokens) external onlyAuthorizedContract {
-        counts[uniqueId] = TokenCount(_sender, _tokens, false)
+    function deposit(address _sender, string calldata _uniqueId, uint256 _tokens) external onlyAuthorizedContract {
+        counts[_uniqueId] = TokenCount(_sender, _tokens, false);
+        emit TokensDeposited(_uniqueId, _sender, _tokens);
+    }
+
+    function claim(string calldata _uniqueId, address _tokenRecipient) external onlyAuthorizedContract {
+        
+        TokenCount storage tokenData = counts[_uniqueId];
+
+        // 1. Safety Checks
+        require(!tokenData.isClaimed, "Escrow: Claim already processed.");
+        require(tokenData.amount > 0, "Escrow: No tokens deposited for this ID.");
+
+        // 2. State Update
+        tokenData.isClaimed = true;
+
+        // 3. Token Transfer: Transfer the tokens to the intended recipient (the NFT receiver)
+        IERC20(tokenAddress).transfer(_tokenRecipient, tokenData.amount);
+        
+        emit TokensClaimed(_uniqueId, _tokenRecipient, tokenData.amount);
     }
 }
