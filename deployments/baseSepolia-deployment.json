@@ -1,0 +1,8 @@
+{
+  "network": "baseSepolia",
+  "deployer": "0x0d9cC9A21c4150AfCb6F3A10Cf1c493EFdD5E0c0",
+  "offbeatGreet": "0x32b94D31276A7421FCdFeA028c452d4ab3DD2b42",
+  "escrow": "0x0Ce8C0E1fB46E1043843651169C4e158072b6533",
+  "token": "0x1111111111111111111111111111111111111111",
+  "timestamp": "2025-10-21T12:30:53.825Z"
+}

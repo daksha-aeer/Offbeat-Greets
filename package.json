@@ -1,5 +1,23 @@
 {
   "name": "base_batches",
   "version": "1.0.0",
-  "type": "module"
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy-simple.js --network",
+    "deploy:local": "hardhat run scripts/deploy-simple.js --network localhost",
+    "deploy:base": "hardhat run scripts/deploy-simple.js --network base",
+    "deploy:base-sepolia": "hardhat run scripts/deploy-simple.js --network baseSepolia",
+    "test": "hardhat test",
+    "node": "hardhat node"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.1",
+    "dotenv": "^17.2.3",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "@openzeppelin/contracts-upgradeable": "^4.9.6"
+  }
 }
