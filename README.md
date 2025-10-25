@@ -1,57 +1,50 @@
-# Sample Hardhat 3 Beta Project (`node:test` and `viem`)
+#  Offbeat Greets
 
-This project showcases a Hardhat 3 Beta project using the native Node.js test runner (`node:test`) and the `viem` library for Ethereum interactions.
+> Send NFTs and tokens to anyone with just an email address. The easiest way to onboard your friends and family to web3.
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+[![View Live Site](https://img.shields.io/badge/View_Live_Site-black?style=for-the-badge&logo=vercel)](https://offbeat-greet.vercel.app/)
+[![Backend Repo](https://img.shields.io/badge/Backend_Repo-grey?style=for-the-badge&logo=github)](https://github.com/daksha-aeer/Offbeat_Greets_backend)
 
-## Project Overview
+---
 
-This example project includes:
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using [`node:test`](nodejs.org/api/test.html), the new Node.js native test runner, and [`viem`](https://viem.sh/).
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
 
-## Usage
+##  The Problem
 
-### Running Tests
+Today, crypto ownership is heavily skewed toward younger generations. **Baby Boomers only have 10% of crypto ownership**, and Gen X isn't far ahead. They are being left out of a huge technological advancement simply because the onboarding process is intimidating, complex, and lacks a personal touch.
 
-To run all the tests in the project, execute the following command:
+How do we bridge this gap? It's up to those of us who are already crypto-native to find simple, trustworthy ways to bring our friends and family into the ecosystem.
 
-```shell
-npx hardhat test
-```
+##  The Solution: Offbeat Greets
 
-You can also selectively run the Solidity or `node:test` tests:
+**Offbeat Greets** are digital, artisanal greeting cards with crypto attached.
 
-```shell
-npx hardhat test solidity
-npx hardhat test nodejs
-```
+It’s a new type of digital connection that bridges the gap between those who used to know no internet and those who call themselves “chronically online.”
 
-### Make a deployment to Sepolia
+Instead of a complex 20-step tutorial, Offbeat Greets lowers the obstacle and fear of starting. The onboarding comes from a trusted source—a friend or loved one—celebrating a real-world moment with a digital card.
 
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
+All you have to do is send them an Offbeat Greet, and they get:
+* Their first crypto wallet
+* Their first NFT (the greeting card)
+* Their first tokens
 
-To run the deployment to a local chain:
+##  How It Works
 
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
+The process is designed to be simple for both the sender and the recipient.
 
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
+### For the Sender (Crypto-Native):
+1.  Connect your existing wallet to the Offbeat Greets app.
+2.  Choose a digital greeting card (NFT).
+3.  Add a message and attach some crypto (e.g., ETH, USDC) as a gift.
+4.  Enter the recipient's email address and send!
 
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
+### For the Recipient (New to Web3):
+1.  Receive a friendly email with a link to their Offbeat Greet.
+2.  With just a few clicks, they can instantly create a new, secure crypto wallet tied to their email (e.g., using Magic Wallet).
+3.  Once their wallet is created, they automatically receive the NFT (the card) and the gifted tokens.
+4.  Welcome to web3!
 
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
+##  Links
 
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
+* **Live Project URL:** [**https://offbeat-greet.vercel.app/**](https://offbeat-greet.vercel.app/)
+* **Backend Repository:** [**https://github.com/daksha-aeer/Offbeat_Greets_backend**](https://github.com/daksha-aeer/Offbeat_Greets_backend)
